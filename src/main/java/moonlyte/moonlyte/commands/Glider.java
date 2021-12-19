@@ -22,7 +22,7 @@ public class Glider implements CommandExecutor {
                     if (!gliderList.contains(p)) {
                         gliderList.add(p);
                         p.setGliding(true);
-                        p.sendMessage("Glider onn");
+                        p.sendMessage("Glider on");
                     } else {
                         gliderList.remove(p);
                         p.setGliding(false);

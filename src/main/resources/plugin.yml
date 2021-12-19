@@ -15,3 +15,11 @@ commands:
     permission: moonlyte.nightvision
     aliases:
       - nv
+  feed:
+    description: Feed yourself or another player
+    usage: /<command>
+    permission: moonlyte.feed
+  heal:
+    description: Heal yourself or another player
+    usage: /<command>
+    permission: moonlyte.heal
