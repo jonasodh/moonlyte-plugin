@@ -1,0 +1,4 @@
+#General configuration
+playerJoinedFirstTimeMessage: '&7[&a+&8] &e[player] Has joined for the first time :)'
+playerJoinMessage: '&7[&a+&8] &e[player]'
+playerLeaveMessage: '&7[&c-&8] &e[player]'

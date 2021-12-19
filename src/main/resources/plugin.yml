@@ -1,0 +1,17 @@
+name: Moonlyte
+version: '${project.version}'
+main: moonlyte.moonlyte.Moonlyte
+api-version: 1.18
+authors: [ Jonas ]
+description: The moonlyte plugin
+commands:
+  glide:
+    description: Start gliding!
+    usage: /<command>
+    permission: moonlyte.glide
+  nightvision:
+    description: Toggle your fear of darkness
+    usage: /<command>
+    permission: moonlyte.nightvision
+    aliases:
+      - nv
