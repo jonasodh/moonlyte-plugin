@@ -23,3 +23,7 @@ commands:
     description: Heal yourself or another player
     usage: /<command>
     permission: moonlyte.heal
+  swim:
+    description: Swim faster!
+    usage: /<command>
+    permission: moonlyte.swim

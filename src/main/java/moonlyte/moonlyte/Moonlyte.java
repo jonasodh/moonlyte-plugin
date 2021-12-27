@@ -1,9 +1,6 @@
 package moonlyte.moonlyte;
 
-import moonlyte.moonlyte.commands.Feed;
-import moonlyte.moonlyte.commands.Glider;
-import moonlyte.moonlyte.commands.Heal;
-import moonlyte.moonlyte.commands.Nightvision;
+import moonlyte.moonlyte.commands.*;
 import moonlyte.moonlyte.listeners.PlayerJoin;
 import moonlyte.moonlyte.listeners.PlayerLeave;
 import moonlyte.moonlyte.listeners.ToggleGlideEvent;
@@ -29,6 +26,7 @@ public final class Moonlyte extends JavaPlugin {
         getCommand("nightvision").setExecutor(new Nightvision());
         getCommand("feed").setExecutor(new Feed());
         getCommand("heal").setExecutor(new Heal());
+        getCommand("swim").setExecutor(new Swim());
     }
 
     public static Moonlyte getPlugin() {

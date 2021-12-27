@@ -15,10 +15,13 @@ public class Heal implements CommandExecutor {
                 if (args.length == 0) {
                     p.setFoodLevel(20);
                     p.setHealth(20);
+                    p.setRemainingAir(300);
                 } else {
                     Player target = Bukkit.getPlayerExact(args[0]);
+                    assert target != null;
                     target.setFoodLevel(20);
                     target.setHealth(20);
+                    target.setRemainingAir(300);
                 }
             } else {
                 p.sendMessage("You don't have permission for this command.");
