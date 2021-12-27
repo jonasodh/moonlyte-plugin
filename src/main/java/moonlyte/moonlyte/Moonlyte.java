@@ -27,6 +27,8 @@ public final class Moonlyte extends JavaPlugin {
         getCommand("feed").setExecutor(new Feed());
         getCommand("heal").setExecutor(new Heal());
         getCommand("swim").setExecutor(new Swim());
+        getCommand("fly").setExecutor(new Fly());
+        getCommand("top").setExecutor(new Top());
     }
 
     public static Moonlyte getPlugin() {

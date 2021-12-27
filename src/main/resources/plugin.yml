@@ -27,3 +27,11 @@ commands:
     description: Swim faster!
     usage: /<command>
     permission: moonlyte.swim
+  fly:
+    description: To the moon!
+    usage: /<command>
+    permission: moonlyte.fly
+  top:
+    description: To the top of current Y axis
+    usage: /<command>
+    permission: moonlyte.top
