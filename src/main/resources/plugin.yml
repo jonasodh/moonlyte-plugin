@@ -35,3 +35,7 @@ commands:
     description: To the top of current Y axis
     usage: /<command>
     permission: moonlyte.top
+  walk:
+    description: Set walking speed
+    usage: /<command>
+    permission: moonlyte.walk
