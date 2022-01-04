@@ -7,6 +7,8 @@ import moonlyte.moonlyte.listeners.ToggleGlideEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.logging.Logger;
+
 public final class Moonlyte extends JavaPlugin {
 
     private static Moonlyte plugin;
@@ -14,7 +16,8 @@ public final class Moonlyte extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
-        System.out.println("Lift-off!");
+        Logger logger = getLogger();
+        logger.info("Lift-off!");
         getConfig().options().copyDefaults(true);
         saveDefaultConfig();
 
