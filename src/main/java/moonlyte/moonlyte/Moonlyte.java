@@ -4,6 +4,7 @@ import moonlyte.moonlyte.commands.*;
 import moonlyte.moonlyte.listeners.PlayerJoin;
 import moonlyte.moonlyte.listeners.PlayerLeave;
 import moonlyte.moonlyte.listeners.ToggleGlideEvent;
+import moonlyte.moonlyte.listeners.compassInteract;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -25,6 +26,7 @@ public final class Moonlyte extends JavaPlugin {
         pm.registerEvents(new PlayerJoin(), this);
         pm.registerEvents(new PlayerLeave(), this);
         pm.registerEvents(new ToggleGlideEvent(), this);
+        pm.registerEvents(new compassInteract(), this);
         getCommand("glide").setExecutor(new Glider());
         getCommand("nightvision").setExecutor(new Nightvision());
         getCommand("feed").setExecutor(new Feed());
@@ -33,6 +35,7 @@ public final class Moonlyte extends JavaPlugin {
         getCommand("fly").setExecutor(new Fly());
         getCommand("top").setExecutor(new Top());
         getCommand("walk").setExecutor(new Walk());
+        getCommand("serverSelector").setExecutor(new ServerSelector());
     }
 
     public static Moonlyte getPlugin() {

@@ -39,3 +39,7 @@ commands:
     description: Set walking speed
     usage: /<command>
     permission: moonlyte.walk
+  serverSelector:
+    description: Teleport to selected server
+    usage: /<command>
+    permission: moonlyte.serverSelector
