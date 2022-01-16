@@ -4,7 +4,7 @@ import moonlyte.moonlyte.commands.*;
 import moonlyte.moonlyte.listeners.PlayerJoin;
 import moonlyte.moonlyte.listeners.PlayerLeave;
 import moonlyte.moonlyte.listeners.ToggleGlideEvent;
-import moonlyte.moonlyte.listeners.compassInteract;
+import moonlyte.moonlyte.listeners.CompassInteract;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -26,7 +26,7 @@ public final class Moonlyte extends JavaPlugin {
         pm.registerEvents(new PlayerJoin(), this);
         pm.registerEvents(new PlayerLeave(), this);
         pm.registerEvents(new ToggleGlideEvent(), this);
-        pm.registerEvents(new compassInteract(), this);
+        pm.registerEvents(new CompassInteract(), this);
         getCommand("glide").setExecutor(new Glider());
         getCommand("nightvision").setExecutor(new Nightvision());
         getCommand("feed").setExecutor(new Feed());

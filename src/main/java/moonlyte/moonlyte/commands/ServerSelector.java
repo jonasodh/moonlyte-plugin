@@ -20,7 +20,7 @@ public class ServerSelector implements CommandExecutor {
         if (commandSender instanceof Player) {
             Player p = (Player) commandSender;
 
-            Inventory serverSelector = Bukkit.createInventory(p, 9, ChatColor.RED + "Server selector");
+            Inventory serverSelector = Bukkit.createInventory(p, 45, ChatColor.RED + "Server selector");
 
             ItemStack lobby = new ItemStack(Material.COMPASS);
             ItemMeta lobbyMeta = lobby.getItemMeta();
